@@ -1,4 +1,4 @@
-nova-browser (1.1.0-1) unstable; urgency=medium
+nova-browser (1.1.0) unstable; urgency=medium
 
   * Multi-tab browsing on Linux.
   * Improved toolbar contrast and home-screen navigation.

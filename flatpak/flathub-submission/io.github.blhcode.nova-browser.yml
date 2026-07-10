@@ -9,11 +9,7 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --device=dri
-  - --filesystem=xdg-config/nova-browser:create
-  - --filesystem=xdg-cache/nova-browser:create
   - --filesystem=xdg-download
-  - --talk-name=org.freedesktop.portal.FileChooser
-  - --talk-name=org.freedesktop.portal.OpenURI
 modules:
   - name: nova-browser
     buildsystem: simple

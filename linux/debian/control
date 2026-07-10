@@ -10,12 +10,11 @@ Rules-Requires-Root: no
 Homepage: https://github.com/blhcode/nova-browser
 Vcs-Browser: https://github.com/blhcode/nova-browser
 Vcs-Git: https://github.com/blhcode/nova-browser.git
-Testsuite: autopkgtest-pkg-python3
 
 Package: nova-browser
 Architecture: all
 Depends: ${misc:Depends},
-         ${python3:Depends},
+         python3,
          python3-gi,
          gir1.2-gtk-3.0,
          gir1.2-webkit2-4.1
