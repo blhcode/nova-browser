@@ -2,6 +2,9 @@ dist/
 *.deb
 *.apk
 *.aab
+apt-repo/
+.flatpak-builder/
+.flatpak-repo/
 android/.gradle/
 android/app/build/
 android/build/

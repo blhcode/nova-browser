@@ -1,0 +1,38 @@
+app-id: io.github.blhcode.NovaBrowser
+runtime: org.gnome.Platform
+runtime-version: '48'
+sdk: org.gnome.Sdk
+command: nova-browser
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --filesystem=home
+  - --filesystem=xdg-download
+  - --talk-name=org.freedesktop.portal.*
+modules:
+  - name: nova-browser
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 flatpak/nova-browser-launch /app/bin/nova-browser
+      - install -d /app/lib/nova-browser
+      - cp -a linux/nova_browser /app/lib/nova-browser/
+      - install -d /app/share/nova-browser
+      - cp -a shared/ui /app/share/nova-browser/
+      - install -Dm644 flatpak/io.github.blhcode.NovaBrowser.desktop
+        /app/share/applications/io.github.blhcode.NovaBrowser.desktop
+      - install -Dm644 flatpak/io.github.blhcode.NovaBrowser.metainfo.xml
+        /app/share/metainfo/io.github.blhcode.NovaBrowser.metainfo.xml
+      - install -Dm644 assets/icon/nova.svg
+        /app/share/icons/hicolor/scalable/apps/io.github.blhcode.NovaBrowser.svg
+      - install -Dm644 flatpak/icons/64x64/io.github.blhcode.NovaBrowser.png
+        /app/share/icons/hicolor/64x64/apps/io.github.blhcode.NovaBrowser.png
+      - install -Dm644 flatpak/icons/128x128/io.github.blhcode.NovaBrowser.png
+        /app/share/icons/hicolor/128x128/apps/io.github.blhcode.NovaBrowser.png
+    sources:
+      - type: git
+        url: https://github.com/blhcode/nova-browser.git
+        tag: v1.1.0
+        commit: PLACEHOLDER_COMMIT

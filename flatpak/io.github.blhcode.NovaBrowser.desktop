@@ -1,9 +1,10 @@
 [Desktop Entry]
 Name=Nova Browser
 Comment=Lightweight browser with home shortcuts and themes
-Exec=env NOVA_BROWSER_UI=/usr/share/nova-browser/ui nova-browser
-Icon=nova-browser
+Exec=nova-browser %U
+Icon=io.github.blhcode.NovaBrowser
 Terminal=false
 Type=Application
 Categories=Network;WebBrowser;
 StartupNotify=true
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;

@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LINUX="$ROOT/linux"
 DIST="$ROOT/dist"
-VERSION="1.0.0"
+VERSION="1.1.0"
 ARCH="all"
 STAGING="$LINUX/build/deb/nova-browser_${VERSION}_${ARCH}"
 PKGDIR="$STAGING/usr"
