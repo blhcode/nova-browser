@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Launch Nova Browser from anywhere — always uses the project copy.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=scripts/detect-display.sh
+source "$ROOT/scripts/detect-display.sh"
+exec "$ROOT/scripts/run-linux-dev.sh" "$@"

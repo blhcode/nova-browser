@@ -1,0 +1,18 @@
+Source: nova-browser
+Section: web
+Priority: optional
+Maintainer: Nova Browser Team <nova@localhost>
+Build-Depends: debhelper-compat (= 13), python3-all
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: nova-browser
+Architecture: all
+Depends: ${misc:Depends},
+         python3,
+         python3-gi,
+         gir1.2-gtk-3.0,
+         gir1.2-webkit2-4.1
+Description: Lightweight web browser with shortcuts and themes
+ Nova Browser provides a simple home screen with website shortcuts,
+ bookmarks, and customizable backgrounds (white, black, space, custom).

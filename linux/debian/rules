@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -d debian/nova-browser/usr/bin
+	install -d debian/nova-browser/usr/lib/nova-browser/nova_browser
+	install -d debian/nova-browser/usr/share/nova-browser/ui
+	install -d debian/nova-browser/usr/share/applications
+	install -d debian/nova-browser/usr/share/icons/hicolor/scalable/apps
+	install -m 755 nova-browser debian/nova-browser/usr/bin/nova-browser
+	cp -a nova_browser/. debian/nova-browser/usr/lib/nova-browser/nova_browser/
+	cp -a ../shared/ui/. debian/nova-browser/usr/share/nova-browser/ui/
+	install -m 644 data/nova-browser.desktop debian/nova-browser/usr/share/applications/
+	install -m 644 ../assets/icon/nova.svg debian/nova-browser/usr/share/icons/hicolor/scalable/apps/nova-browser.svg

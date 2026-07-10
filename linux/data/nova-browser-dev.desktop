@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nova Browser (Dev)
+Comment=Launch Nova Browser from the project folder
+Exec=/home/isaiah/Projects/Nova Browser/Nova-Browser
+Icon=/home/isaiah/Projects/Nova Browser/assets/icon/nova.svg
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true
