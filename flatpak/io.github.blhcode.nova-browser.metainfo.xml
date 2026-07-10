@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.blhcode.nova-browser</id>
+  <name>Nova Browser</name>
+  <summary>Lightweight browser with shortcuts, bookmarks, and themes</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="io.github.blhcode">
+    <name>Isaiah Cannings</name>
+  </developer>
+  <description>
+    <p>
+      Nova Browser is a lightweight cross-platform web browser for desktop Linux
+      and Android. The Linux build uses WebKitGTK with a shared home screen for
+      website shortcuts, bookmarks, and customizable themes.
+    </p>
+    <p>Features include multi-tab browsing, White/Black/Space/Custom themes, and
+    one-tap bookmark saving.</p>
+  </description>
+  <launchable type="desktop-id">io.github.blhcode.nova-browser.desktop</launchable>
+  <url type="homepage">https://github.com/blhcode/nova-browser</url>
+  <url type="bugtracker">https://github.com/blhcode/nova-browser/issues</url>
+  <url type="vcs-browser">https://github.com/blhcode/nova-browser</url>
+  <icon type="stock">io.github.blhcode.nova-browser</icon>
+  <categories>
+    <category>Network</category>
+    <category>WebBrowser</category>
+  </categories>
+  <releases>
+    <release version="1.1.0" date="2026-07-10">
+      <description>
+        <p>Multi-tab browsing on Linux and Android, improved toolbar contrast, and star app icon.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>

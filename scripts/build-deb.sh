@@ -31,7 +31,7 @@ Section: web
 Priority: optional
 Architecture: ${ARCH}
 Depends: python3, python3-gi, gir1.2-gtk-3.0, gir1.2-webkit2-4.1
-Maintainer: Nova Browser Team <nova@localhost>
+Maintainer: Isaiah Cannings <isaiahcannings@hotmail.com>
 Description: Lightweight web browser with shortcuts and themes
  Nova Browser provides a simple home screen with website shortcuts,
  bookmarks, and customizable backgrounds (white, black, space, custom).

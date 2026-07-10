@@ -15,6 +15,7 @@ linux/debian/debhelper-build-stamp
 linux/debian/*.debhelper
 linux/debian/*.substvars
 linux/debian/*.log
+linux/build/
 __pycache__/
 *.pyc
 .DS_Store

@@ -1,5 +1,7 @@
-nova-browser (1.0.0) unstable; urgency=medium
+nova-browser (1.1.0-1) unstable; urgency=medium
 
-  * Initial release.
+  * Multi-tab browsing on Linux.
+  * Improved toolbar contrast and home-screen navigation.
+  * Star application icon.
 
- -- Nova Browser Team <nova@localhost>  Wed, 17 Jun 2026 12:00:00 +0000
+ -- Isaiah Cannings <isaiahcannings@hotmail.com>  Fri, 10 Jul 2026 12:00:00 +0000

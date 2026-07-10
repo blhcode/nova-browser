@@ -1,18 +1,25 @@
 Source: nova-browser
 Section: web
 Priority: optional
-Maintainer: Nova Browser Team <nova@localhost>
-Build-Depends: debhelper-compat (= 13), python3-all
-Standards-Version: 4.6.2
+Maintainer: Isaiah Cannings <isaiahcannings@hotmail.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all
+Standards-Version: 4.7.0
 Rules-Requires-Root: no
+Homepage: https://github.com/blhcode/nova-browser
+Vcs-Browser: https://github.com/blhcode/nova-browser
+Vcs-Git: https://github.com/blhcode/nova-browser.git
+Testsuite: autopkgtest-pkg-python3
 
 Package: nova-browser
 Architecture: all
 Depends: ${misc:Depends},
-         python3,
+         ${python3:Depends},
          python3-gi,
          gir1.2-gtk-3.0,
          gir1.2-webkit2-4.1
-Description: Lightweight web browser with shortcuts and themes
- Nova Browser provides a simple home screen with website shortcuts,
- bookmarks, and customizable backgrounds (white, black, space, custom).
+Description: lightweight web browser with shortcuts and themes
+ Nova Browser is a desktop web browser built on WebKitGTK with a home screen
+ of website shortcuts, bookmarks, and customizable themes (white, black,
+ space, and custom colors with optional background image).
