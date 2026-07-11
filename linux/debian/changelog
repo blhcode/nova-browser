@@ -1,3 +1,15 @@
+nova-browser (1.1.2) unstable; urgency=medium
+
+  * Add lintian overrides for native browser packaging.
+
+ -- Isaiah Cannings <isaiahcannings@hotmail.com>  Sat, 11 Jul 2026 09:15:00 +1000
+
+nova-browser (1.1.1) unstable; urgency=medium
+
+  * Fix Debian control dependencies for lintian.
+
+ -- Isaiah Cannings <isaiahcannings@hotmail.com>  Sat, 11 Jul 2026 08:55:00 +1000
+
 nova-browser (1.1.0) unstable; urgency=medium
 
   * Multi-tab browsing on Linux.

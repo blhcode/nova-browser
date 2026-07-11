@@ -1,0 +1,2 @@
+nova-browser: python3-depends-but-no-python3-helper
+nova-browser: bad-distribution-in-changes-file
